@@ -3,33 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photography & Optical Rigging | Michael Wolfenberger</title>
-  <meta name="description" content="An overview of Michael Wolfenberger's photography practice — Canon Rebel T7i camera body, mobile cage rigging systems, and 67mm filter optics for street and environmental work.">
+  <title>Photography | Michael Wolfenberger</title>
+  <meta name="description" content="Pacific Northwest street, environmental portraits, and natural light — shot on a Canon Rebel T7i and modular cage rig by Michael Wolfenberger.">
   <meta name="author" content="Michael Wolfenberger">
   <link rel="canonical" href="https://michaelwolfenberger.com/photography.html">
 
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Photography & Optical Rigging | Michael Wolfenberger">
-  <meta property="og:description" content="An overview of Michael Wolfenberger's photography practice — Canon Rebel T7i camera body, mobile cage rigging systems, and 67mm filter optics for street and environmental work.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Photography | Michael Wolfenberger">
+  <meta property="og:description" content="Pacific Northwest street, environmental portraits, and natural light — shot on a Canon Rebel T7i and modular cage rig.">
   <meta property="og:url" content="https://michaelwolfenberger.com/photography.html">
   <meta property="og:site_name" content="Michael Wolfenberger">
 
-  <!-- JSON-LD Article Schema -->
+  <!-- JSON-LD: CollectionPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Photography & Optical Rigging",
-    "description": "An overview of Michael Wolfenberger's photography practice — Canon Rebel T7i camera body, mobile cage rigging systems, and 67mm filter optics for street and environmental work.",
+    "@type": "CollectionPage",
+    "name": "Photography — Michael Wolfenberger",
+    "description": "Pacific Northwest street, environmental portraits, and natural light captured on a Canon Rebel T7i and modular cage rig.",
     "url": "https://michaelwolfenberger.com/photography.html",
-    "datePublished": "2026-08-16",
     "author": {
-      "@type": "Person",
-      "name": "Michael Wolfenberger",
-      "url": "https://michaelwolfenberger.com"
-    },
-    "publisher": {
       "@type": "Person",
       "name": "Michael Wolfenberger",
       "url": "https://michaelwolfenberger.com"
@@ -38,33 +32,30 @@
   </script>
 
   <style>
+    /* ── Design System Variables ── */
     :root {
-      --bg-color: #0d1117;
-      --card-bg: #161b22;
-      --text-color: #c9d1d9;
+      --bg-color:      #0d1117;
+      --card-bg:       #161b22;
+      --text-color:    #c9d1d9;
       --heading-color: #f0f6fc;
-      --accent-color: #58a6ff;
-      --border-color: #30363d;
-      --muted-color: #8b949e;
-      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --accent-color:  #58a6ff;
+      --border-color:  #30363d;
+      --muted-color:   #8b949e;
+      --font-family:   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background-color: var(--bg-color);
       color: var(--text-color);
       font-family: var(--font-family);
-      line-height: 1.75;
+      line-height: 1.7;
     }
 
     /* ── Navigation ── */
     nav {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 2rem 1.5rem 1rem;
       display: flex;
@@ -80,121 +71,208 @@
       transition: opacity 0.2s ease;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { opacity: 0.75; }
 
     nav span {
       color: var(--muted-color);
       font-size: 0.9rem;
     }
 
-    /* ── Main Content ── */
+    /* ── Layout ── */
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem;
+      padding: 3rem 1.5rem 2rem;
     }
 
-    header {
-      margin-bottom: 2.5rem;
+    section { margin-bottom: 3.5rem; }
+
+    /* ── Page Header ── */
+    .page-header {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 3rem;
     }
 
-    h1 {
+    .page-header h1 {
       color: var(--heading-color);
-      font-size: 2.2rem;
-      line-height: 1.25;
+      font-size: 2.5rem;
+      line-height: 1.2;
       margin-bottom: 0.75rem;
     }
 
-    .subtitle {
-      font-size: 1.15rem;
+    .page-header p {
+      font-size: 1.1rem;
       color: var(--muted-color);
-      margin-bottom: 1.5rem;
-      font-style: italic;
+      max-width: 620px;
     }
 
-    .meta {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      margin-bottom: 2rem;
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .meta strong {
-      color: var(--heading-color);
-    }
-
-    /* ── Section Headings ── */
+    /* ── Section Labels ── */
     h2 {
-      color: var(--heading-color);
-      font-size: 1.35rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 0.4rem;
+      color: var(--muted-color);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
     }
 
-    /* ── Body Copy ── */
-    p {
-      margin-bottom: 1.5rem;
+    /* ── Approach ── */
+    .approach p {
       font-size: 1.05rem;
       color: var(--text-color);
+      max-width: 680px;
+      margin-bottom: 1.1rem;
     }
 
-    strong {
-      color: var(--heading-color);
-    }
+    .approach p:last-child { margin-bottom: 0; }
 
-    /* ── Gear Reference Block ── */
+    /* ── Gear Block ── */
     .gear-block {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .gear-block h3 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
+      padding: 1.4rem 1.75rem;
     }
 
     .gear-list {
       list-style: none;
       padding: 0;
       margin: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
     }
 
     .gear-list li {
-      color: var(--text-color);
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 1rem;
       font-size: 0.95rem;
-      padding-left: 1.1rem;
-      position: relative;
+      align-items: baseline;
     }
 
-    .gear-list li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
+    .gear-label {
       color: var(--accent-color);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      font-weight: 600;
+    }
+
+    .gear-detail { color: var(--text-color); line-height: 1.55; }
+
+    /* ── Work Cards ── */
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .work-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .work-card:hover { border-color: var(--accent-color); transform: translateY(-2px); }
+
+    /* ── Image Rotator ── */
+    .gallery-slot {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: #0a0f16;
+      overflow: hidden;
+    }
+
+    /* Stacked images — all absolute, crossfade via opacity */
+    .gallery-slot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      display: block;
+    }
+
+    .gallery-slot img.active { opacity: 1; }
+
+    /* Placeholder shown when no images are configured */
+    .gallery-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .gallery-placeholder .ph-icon {
+      font-size: 1.6rem;
+      opacity: 0.15;
+      line-height: 1;
+    }
+
+    .gallery-placeholder .ph-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted-color);
+      opacity: 0.4;
+    }
+
+    /* Dot indicators */
+    .gallery-dots {
+      position: absolute;
+      bottom: 0.6rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+
+    .gallery-dots .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .gallery-dots .dot.active { background: rgba(255, 255, 255, 0.85); }
+
+    /* Card text */
+    .card-text {
+      padding: 1.1rem 1.25rem 1.25rem;
+    }
+
+    .card-text h3 {
+      color: var(--heading-color);
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .card-text p {
+      color: var(--muted-color);
+      font-size: 0.85rem;
+      line-height: 1.55;
+      margin: 0;
     }
 
     /* ── Footer ── */
     footer {
-      max-width: 800px;
-      margin: 3rem auto 0;
+      max-width: 900px;
+      margin: 0 auto;
       padding: 2rem 1.5rem;
       border-top: 1px solid var(--border-color);
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--muted-color);
       display: flex;
       justify-content: space-between;
@@ -202,13 +280,18 @@
       gap: 0.5rem;
     }
 
-    footer a {
-      color: inherit;
-      text-decoration: none;
+    footer a { color: inherit; text-decoration: none; }
+    footer a:hover { color: var(--accent-color); }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 2rem; }
+      .gear-list li { grid-template-columns: 1fr; gap: 0.2rem; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
     }
 
-    footer a:hover {
-      color: var(--accent-color);
+    @media (max-width: 400px) {
+      .work-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -216,59 +299,198 @@
 
   <nav>
     <a href="index.html">&larr; Back to MichaelWolfenberger.com</a>
-    <span>Photography &amp; Optical Rigging</span>
+    <span>Photography</span>
   </nav>
 
   <main>
-    <article>
-      <header>
-        <h1>Photography &amp; Optical Rigging</h1>
-        <p class="subtitle">Practical notes on shooting with a Canon Rebel T7i, building a mobile cage rig, and working with 67mm filter optics to control light before it ever reaches the sensor.</p>
-        <div class="meta">
-          <span><strong>By:</strong> Michael Wolfenberger</span>
-          <span><strong>Updated:</strong> August 2026</span>
-          <span><strong>Primary Body:</strong> Canon EOS Rebel T7i</span>
-        </div>
-      </header>
 
-      <!-- Gear Quick-Reference -->
+    <div class="page-header">
+      <h1>Photography</h1>
+      <p>Pacific Northwest street, environmental portraits, and natural light — shot on a Canon Rebel T7i and modular cage rig.</p>
+    </div>
+
+    <section class="approach">
+      <h2>Approach</h2>
+      <p>I focus on the fundamentals: reading ambient light, understanding exposure, and framing clean geometry before lifting the camera. Most of my work centers on the Pacific Northwest — rain-slicked streets, moody coastal light, and candid environmental portraits.</p>
+      <p>I work with available light and handle exposure in-camera: RAW capture, deliberate framing, and an active histogram.</p>
+    </section>
+
+    <section class="setup">
+      <h2>Field Kit</h2>
       <div class="gear-block">
-        <h3>Current Kit</h3>
         <ul class="gear-list">
-          <li>Canon EOS Rebel T7i (800D) — 24.2MP APS-C</li>
-          <li>Canon EF-S 18-135mm f/3.5-5.6 IS STM</li>
-          <li>Aluminum camera cage with top handle &amp; side grip</li>
-          <li>67mm 10-stop variable ND filter</li>
-          <li>67mm circular polarizer</li>
-          <li>67mm UV/haze protective filter</li>
+          <li>
+            <span class="gear-label">Camera &amp; Rig</span>
+            <span class="gear-detail">Canon EOS Rebel T7i &nbsp;·&nbsp; Neewer Aluminum Cage Rig</span>
+          </li>
+          <li>
+            <span class="gear-label">Lenses</span>
+            <span class="gear-detail">50mm Prime (portraits &amp; low light) &nbsp;·&nbsp; 18–135mm IS STM (all-around focal range)</span>
+          </li>
         </ul>
       </div>
+    </section>
 
-      <h2>1. The Canon Rebel T7i — Body, Sensor &amp; Why It Still Delivers</h2>
-      <p><strong>The Canon EOS Rebel T7i sits in a precise niche: it is one of the last entry-level Canon bodies to offer meaningful optical value without chasing mirrorless transitions.</strong> Its 24.2MP APS-C CMOS sensor, paired with the DIGIC 7 processor, delivers clean files up to ISO 3200 without heavy luminance noise — a practical ceiling for available-light work without flash assist. The Dual Pixel CMOS AF system makes live-view and video acquisition genuinely usable in the field, tracking subjects with phase-detection accuracy that earlier Rebel bodies could not achieve. The optical viewfinder offers 95% frame coverage, close enough that minor edge composition adjustments in post are trivial. Canon's EF/EF-S lens mount gives access to decades of glass — from inexpensive primes to professional L-series optics — without an adapter introducing flange-distance error or slowing autofocus communication.</p>
+    <section class="work">
+      <h2>Selected Work</h2>
+      <div class="work-grid">
 
-      <h2>2. Mobile Cage Rigging — Structure, Balance &amp; Modularity</h2>
-      <p><strong>A camera cage transforms the T7i from a solo body into a modular capture platform capable of carrying accessories without compromising balance or ergonomics.</strong> The cage wraps the body in a structural aluminum frame threaded with 1/4"-20 and 3/8"-16 mounting points on every face, enabling consistent accessory placement without shifting the center of gravity unexpectedly. A top handle mounted near the optical axis redistributes weight upward, and combined with a side grip creates a two-point hold that dramatically reduces micro-shake during handheld shooting. Cold shoe mounts on the top rail allow an external monitor, microphone, or on-camera LED panel to attach without stacking adapters. The result is a rig that remains single-operator portable while providing the structural integrity needed to stabilize longer focal-length glass — and to support the heavier 67mm filter ring without flex at the front element.</p>
+        <div class="work-card" data-gallery="portraits">
+          <div class="gallery-slot">
+            <div class="gallery-placeholder">
+              <span class="ph-icon">◻</span>
+              <span class="ph-label">Photos coming soon</span>
+            </div>
+            <div class="gallery-dots" hidden></div>
+          </div>
+          <div class="card-text">
+            <h3>Portraits &amp; People</h3>
+            <p>Candid, available-light portraits in natural environments.</p>
+          </div>
+        </div>
 
-      <h2>3. 67mm Filter Optics — ND, Polarizers &amp; Light Control</h2>
-      <p><strong>Working in the 67mm filter diameter is a deliberate choice that aligns with the most versatile lenses in the EF-S ecosystem while keeping a manageable footprint.</strong> The Canon EF-S 18-135mm f/3.5-5.6 IS STM — a frequent pairing with the T7i — ships with a 67mm thread, making it a natural anchor point for a consistent filter kit. A 10-stop variable ND at this diameter allows shutter speeds of 1/2 to 1 full second in full daylight, enabling motion blur in moving water or pedestrian environments without underexposing the frame. A circular polarizer reduces reflective glare from glass, still water, and wet pavement by rotating the polarizing element until the reflected angle is attenuated — a mechanical light-control technique that no post-processing filter accurately replicates. A UV/haze filter in the same thread serves as a permanent front-element protector, adding no perceptible optical degradation on modern multi-coated glass while absorbing minor atmospheric scatter on distant landscape shots.</p>
+        <div class="work-card" data-gallery="urban">
+          <div class="gallery-slot">
+            <div class="gallery-placeholder">
+              <span class="ph-icon">◻</span>
+              <span class="ph-label">Photos coming soon</span>
+            </div>
+            <div class="gallery-dots" hidden></div>
+          </div>
+          <div class="card-text">
+            <h3>Urban Geometry</h3>
+            <p>High-contrast street scenes, structural lines, and architectural shadows.</p>
+          </div>
+        </div>
 
-      <h2>4. Composition Philosophy — Reading Light Before Framing</h2>
-      <p><strong>Before the viewfinder comes up, the most important compositional decision is already made: understanding the quality, direction, and color temperature of the available light.</strong> Hard directional light — midday overhead sun or a single bare flash — creates deep, fast-edged shadows that suit graphic, high-contrast subject work. Diffuse light from an overcast sky or open shade produces wrap-around illumination with soft shadow transitions, which is more forgiving for portraiture or detail-heavy macro shots where texture is the subject. The T7i's in-body exposure histogram, accessible in live view, provides a real-time luminance map that flags blown highlights or crushed shadows before the shutter fires. Working within this constraint — ensuring the histogram never clips at either extreme — locks in recoverable RAW data regardless of the final stylistic direction taken in post.</p>
+        <div class="work-card" data-gallery="pnw">
+          <div class="gallery-slot">
+            <div class="gallery-placeholder">
+              <span class="ph-icon">◻</span>
+              <span class="ph-label">Photos coming soon</span>
+            </div>
+            <div class="gallery-dots" hidden></div>
+          </div>
+          <div class="card-text">
+            <h3>Pacific Northwest</h3>
+            <p>Coastal waterways, marine fog, and evergreen landscapes.</p>
+          </div>
+        </div>
 
-      <h2>5. Street &amp; Environmental Work — Practical Shooting Discipline</h2>
-      <p><strong>Shooting in uncontrolled environments requires a disciplined pre-set methodology rather than reactive adjustment after a moment has passed.</strong> Setting the camera to Aperture Priority with Auto ISO bounded between 100 and 1600 offloads two variables to the processor while retaining direct control over depth of field — the decision that most directly shapes how a viewer reads an image. A shutter speed floor at 1/focal-length compensates for subject movement, bumping ISO before allowing motion blur that reads as camera shake rather than artistic intent. The cage's dual-grip hold allows comfortable wide-stance shooting at slower shutter speeds, recovering an additional 1–2 stops of effective exposure in lower-light environments without invoking the image stabilization delay cycle. When the polarizer is mounted, the 67mm ring stays on the lens between shots, requiring only a rotation adjustment as surfaces and angles change — not a full filter swap.</p>
+        <div class="work-card" data-gallery="light">
+          <div class="gallery-slot">
+            <div class="gallery-placeholder">
+              <span class="ph-icon">◻</span>
+              <span class="ph-label">Photos coming soon</span>
+            </div>
+            <div class="gallery-dots" hidden></div>
+          </div>
+          <div class="card-text">
+            <h3>Available Light</h3>
+            <p>Compositions exploring natural contrast, deep shadows, and low-light depth.</p>
+          </div>
+        </div>
 
-      <h2>6. Post-Processing &amp; File Workflow</h2>
-      <p><strong>Shooting in RAW (.CR2) format preserves the full 14-bit tonal range captured by the T7i sensor, providing the necessary latitude for non-destructive adjustments to exposure, white balance, and shadow recovery.</strong> A consistent import profile — setting a neutral picture-style baseline, applying input sharpening at a radius matched to the sensor's native resolution, and tagging lens-correction profiles for the shooting optic — standardizes the starting point across a session. Localized adjustments using gradient or radial masks target the specific luminance zones where available-light exposure produced uneven results: brightening shadow foregrounds, recovering near-clipped sky gradients, or adding micro-contrast to mid-tones that flat light compressed into a narrow tonal band. The 67mm filter stack does the heavy lifting optically before the sensor, which reduces the post-processing load substantially — a polarizer's reflection removal is permanent captured data; a simulated version applied in post is always an approximation working backward from compressed information that is already gone.</p>
+      </div>
+    </section>
 
-    </article>
   </main>
 
   <footer>
     <span>&copy; 2026 Michael Wolfenberger. All rights reserved.</span>
     <span><a href="index.html">michaelwolfenberger.com</a></span>
   </footer>
+
+  <script>
+    /*
+    ══════════════════════════════════════════════════════
+      IMAGE CONFIGURATION
+      Add photo filenames to each section's array below.
+
+      Folder structure expected in the repo:
+        images/portraits/   → portraits & people shots
+        images/urban/       → urban geometry shots
+        images/pnw/         → pacific northwest shots
+        images/light/       → available light shots
+
+      Example:
+        portraits: ['portraits/img1.jpg', 'portraits/img2.jpg'],
+    ══════════════════════════════════════════════════════
+    */
+    const GALLERY_IMAGES = {
+      portraits: [
+        // 'images/portraits/img1.jpg',
+      ],
+      urban: [
+        // 'images/urban/img1.jpg',
+      ],
+      pnw: [
+        // 'images/pnw/img1.jpg',
+      ],
+      light: [
+        // 'images/light/img1.jpg',
+      ]
+    };
+
+    /* Rotation interval in milliseconds */
+    const ROTATE_INTERVAL = 4000;
+
+    /* ── Rotator logic — no changes needed below this line ── */
+    document.querySelectorAll('.work-card[data-gallery]').forEach(card => {
+      const key    = card.dataset.gallery;
+      const images = GALLERY_IMAGES[key] || [];
+      const slot   = card.querySelector('.gallery-slot');
+      const dots   = card.querySelector('.gallery-dots');
+
+      if (!images.length) return; /* keep placeholder, nothing to do */
+
+      /* Hide placeholder */
+      slot.querySelector('.gallery-placeholder').hidden = true;
+
+      /* Build stacked <img> elements */
+      images.forEach((src, i) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = card.querySelector('h3').textContent + ' — photo ' + (i + 1);
+        img.loading = 'lazy';
+        if (i === 0) img.classList.add('active');
+        slot.insertBefore(img, dots);
+      });
+
+      /* Build dot indicators (only if more than one image) */
+      if (images.length > 1) {
+        dots.hidden = false;
+        images.forEach((_, i) => {
+          const d = document.createElement('span');
+          d.className = 'dot' + (i === 0 ? ' active' : '');
+          dots.appendChild(d);
+        });
+      }
+
+      /* Rotation state */
+      let current = 0;
+      let timer   = null;
+      const imgEls = slot.querySelectorAll('img');
+      const dotEls = dots.querySelectorAll('.dot');
+
+      function advance() {
+        imgEls[current].classList.remove('active');
+        dotEls[current] && dotEls[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        imgEls[current].classList.add('active');
+        dotEls[current] && dotEls[current].classList.add('active');
+      }
+
+      function start() { timer = setInterval(advance, ROTATE_INTERVAL); }
+      function stop()  { clearInterval(timer); }
+
+      if (images.length > 1) {
+        start();
+        card.addEventListener('mouseenter', stop);
+        card.addEventListener('mouseleave', start);
+      }
+    });
+  </script>
 
 </body>
 </html>
