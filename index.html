@@ -8,22 +8,28 @@
   
   <!-- Person Schema for Search Engine Knowledge Graphs -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Michael Wolfenberger",
-    "url": "https://michaelwolfenberger.com",
-    "jobTitle": "Computer Science Specialist",
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Western Governors University"
-    },
-    "sameAs": [
-      "https://github.com/MichaelWolfenberger",
-      "https://www.linkedin.com/in/michaelwolfenberger"
-    ]
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Michael Wolfenberger",
+  "url": "https://michaelwolfenberger.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/michaelwolfenberger",
+    "https://github.com/MichaelWolfenberger",
+    "https://medium.com/@MichaelWolfenberger",
+    "https://x.com/MichaelWolfenberger"
+  ],
+  "jobTitle": "Computer Science Graduate & Systems Specialist",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Michael Wolfenberger"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Western Governors University"
   }
-  </script>
+}
+</script>
 
   <style>
     /* CSS Variables for Centralized Theme Management */
@@ -251,26 +257,29 @@
         </div>
       </section>
 
-      <!-- Writing & Media Reviews -->
-      <section id="reviews">
-  <h2>Latest Film & Tech Analysis</h2>
-  <div class="grid">
-    <a href="alien-review.html" style="text-decoration: none; color: inherit;">
-      <div class="card">
-        <h3>The Industrial Nightmare of Ridley Scott’s Alien</h3>
-        <p>A structural breakdown of workplace pragmatism, biomechanical horror, and narrative discipline in 1979's sci-fi classic.</p>
-        <span class="tag">Film Review</span>
-        <span class="tag">Alien (1979)</span>
-      </div>
-    </a>
+<!-- ==================== WRITING / REVIEWS SECTION ==================== -->
+    <section id="articles">
+      <h2>Writing & Analysis</h2>
+      <div class="card-grid">
 
-    <div class="card">
-      <h3>House of the Dragon: Production & VFX</h3>
-      <p>A closer look at creature design, physical props, and visual effects rendering in fantasy television.</p>
-      <span class="tag">VFX Analysis</span>
-    </div>
-  </div>
-</section>
+        <!-- Alien -->
+        <article class="card">
+          <span class="tag">Film Analysis</span>
+          <h3>Working-Class Dread: Ridley Scott's Alien (1979)</h3>
+          <p>An analysis of industrial realism, biomechanical horror, and blue-collar survival in deep space.</p>
+          <a href="alien-review.html" class="read-more">Read Review &rarr;</a>
+        </article>
+
+        <!-- Blade Runner -->
+        <article class="card">
+          <span class="tag">Film Analysis</span>
+          <h3>The Architecture of Grief: Ridley Scott's Blade Runner</h3>
+          <p>How chiaroscuro lighting, Vangelis's synthetic dirge, and Rutger Hauer's final monologue transform a sci-fi procedural into a meditation on mortality.</p>
+          <a href="blade-runner-review.html" class="read-more">Read Review &rarr;</a>
+        </article>
+
+      </div>
+    </section>
     </main>
 
     <footer>
