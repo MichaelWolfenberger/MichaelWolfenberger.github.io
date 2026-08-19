@@ -177,6 +177,23 @@
       border-color: var(--accent);
     }
 
+    /* Full-card clickable anchor wrapper */
+    a.card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Preserves the arrow/cta text style inside clickable cards */
+    .card-cta {
+      display: inline-block;
+      margin-top: 0.75rem;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
     .card h3 { 
       margin-bottom: 0.5rem; 
       font-size: 1.2rem; 
@@ -242,13 +259,13 @@
       <section id="projects">
         <h2>Featured Projects</h2>
         <div class="grid">
-          <article class="card">
+          <a href="photography.html" class="card">
             <h3>Photography &amp; Optical Rigging</h3>
             <p>Canon Rebel T7i shooting, mobile cage rig builds, and 67mm filter optics for light control in street and environmental work.</p>
             <span class="tag">Canon T7i</span>
             <span class="tag">67mm Optics</span>
-            <a href="photography.html" style="display:inline-block; margin-top:0.75rem; color:var(--accent); text-decoration:none; font-weight:600; font-size:0.9rem;">View Photography &rarr;</a>
-          </article>
+            <span class="card-cta">View Photography &rarr;</span>
+          </a>
 
           <div class="card">
             <h3>3D Printing & Physical Builds</h3>
@@ -265,20 +282,20 @@
       <div class="card-grid">
 
         <!-- Alien -->
-        <article class="card">
+        <a href="alien-review.html" class="card">
           <span class="tag">Film Analysis</span>
           <h3>Working-Class Dread: Ridley Scott's Alien (1979)</h3>
           <p>An analysis of industrial realism, biomechanical horror, and blue-collar survival in deep space.</p>
-          <a href="alien-review.html" class="read-more">Read Review &rarr;</a>
-        </article>
+          <span class="card-cta">Read Review &rarr;</span>
+        </a>
 
         <!-- Blade Runner -->
-        <article class="card">
+        <a href="blade-runner-review.html" class="card">
           <span class="tag">Film Analysis</span>
           <h3>The Architecture of Grief: Ridley Scott's Blade Runner</h3>
           <p>How chiaroscuro lighting, Vangelis's synthetic dirge, and Rutger Hauer's final monologue transform a sci-fi procedural into a meditation on mortality.</p>
-          <a href="blade-runner-review.html" class="read-more">Read Review &rarr;</a>
-        </article>
+          <span class="card-cta">Read Review &rarr;</span>
+        </a>
 
       </div>
     </section>
